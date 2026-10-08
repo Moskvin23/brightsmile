@@ -8,7 +8,7 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { id: string } }) {
   const c = getClinic(params.id);
-  return { title: c ? `${c.name} — book online | Brightsmile` : 'Clinic | Brightsmile' };
+  return { title: c ? `${c.name} — book online` : 'Clinic' };
 }
 
 export default function Page({ params }: { params: { id: string } }) {
